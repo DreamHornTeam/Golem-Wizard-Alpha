@@ -1,0 +1,1 @@
+global.missileMenu = 1;
