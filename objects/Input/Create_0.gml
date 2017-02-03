@@ -1,19 +1,19 @@
 //movement
-up = keyboard_check(vk_up);
-down = keyboard_check(vk_down);
-right = keyboard_check(vk_right);
-left = keyboard_check(vk_left);
+up = false;
+down = false;
+right = false;
+left = false;
 
 //spell controls
 
-q = keyboard_check(ord("Q"));
-w = keyboard_check(ord("W"));
-e = keyboard_check(ord("E"));
-r = keyboard_check(ord("R"));
+q = false;
+w = false;
+e = false;
+r = false;
 
 //menu stuff
-s = keyboard_check(ord("S"));
-esc = keyboard_check(vk_escape);
+s = false;
+esc = false;
 //spacebar. strafing?
 
-sb = keyboard_check(vk_space);
+sb = false;

@@ -13,7 +13,7 @@ if (Input.s) room_goto(rm_spellMenu);
 
 //Movement:
 
-/*
+
 if (keyboard_check(vk_left)) {
 	left = true;
 	}
@@ -41,7 +41,7 @@ if (keyboard_check(vk_down)) {
 		down = false;
 		
 }
-*/		
+	
 //Diagonal/directional stuff
 
 
