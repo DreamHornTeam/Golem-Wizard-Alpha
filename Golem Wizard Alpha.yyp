@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "f91d7608-8ed2-4f73-aa6e-43c66a73ff06",
+            "Value": {
+                "id": "41967479-ad5f-405b-9ff3-49621d60db8b",
+                "resourcePath": "objects\\obj_continueGame\\obj_continueGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fb16c94c-0ff6-4fac-bc00-6229bdd77d68",
             "Value": {
                 "id": "a04f2442-b7ed-4aff-9853-8cdaf0e10cc2",
