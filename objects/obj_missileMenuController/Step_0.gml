@@ -14,5 +14,12 @@ switch (global.missileMenu) {
 }
 
 
+
+
+
+
+
+/*
+
 if (global.missileMenu <= 0) global.missileMenu = 2;
 if (global.missileMenu > 2) global.missileMenu = 1;

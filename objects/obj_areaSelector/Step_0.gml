@@ -1,18 +1,18 @@
 switch (global.spellMenu) {
 	case 1: {
-		sprite_index = spr_areaChoose;
+		draw_sprite (spr_areaChoose,sprite_index,x,y);
 		break;
-		}
-	case 2: {
-		sprite_index = spr_areaChooseSelect;
-		break;
-		}
-	case 3: {
-		sprite_index = spr_areaChoose;
-		break;
-		}
-	case 4: {
-		sprite_index = spr_areaChoose;
-		break;
-		}	
 	}
+	case 2: {
+		draw_sprite (spr_areaChoose,1,x,y);
+		break;
+	}
+	case 3: {
+		draw_sprite (spr_areaChoose,sprite_index,x,y);
+		break;
+	}
+	case 4: {
+		draw_sprite (spr_areaChoose,sprite_index,x,y);
+		break;
+	}	
+}

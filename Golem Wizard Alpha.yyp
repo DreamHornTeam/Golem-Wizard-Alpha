@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "836d10ff-00b4-4c8d-b1a6-43e1073a4289",
+            "Value": {
+                "id": "d1fdb81b-b8b3-47db-8eba-6d350091f92a",
+                "resourcePath": "sprites\\spr_fireBallIconYes\\spr_fireBallIconYes.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "875077e5-4cc7-4197-94b3-e3faf1521469",
             "Value": {
                 "id": "bdd8b656-f78a-4d39-91dc-907068f914f6",
@@ -983,14 +991,6 @@
             }
         },
         {
-            "Key": "bec59785-cd05-4bec-9767-9b111cda2b9d",
-            "Value": {
-                "id": "b399207e-9a1d-4c3e-871a-a59824182e89",
-                "resourcePath": "sprites\\spr_areaChooseSelect\\spr_areaChooseSelect.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c5d311a3-ddf4-48e2-a89b-43ed6cf86b1e",
             "Value": {
                 "id": "25c7b0fd-ecb0-4248-9cb8-6ddd6f62916a",
@@ -1076,6 +1076,14 @@
                 "id": "267eabda-4051-49ab-b9a0-ff4e56a3f4ab",
                 "resourcePath": "sprites\\spr_golemNorthEast\\spr_golemNorthEast.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "de93a6a8-def5-4481-b9ba-ca2b308815f6",
+            "Value": {
+                "id": "07219bef-2f39-4bc9-8858-0706114d5415",
+                "resourcePath": "views\\de93a6a8-def5-4481-b9ba-ca2b308815f6.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

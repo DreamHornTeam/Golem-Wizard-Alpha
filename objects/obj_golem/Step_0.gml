@@ -3,87 +3,90 @@ if (playerHp <= 0) {
 	instance_destroy();
 	instance_destroy(obj_spellController);
 	}
-	
-//for aiming
+
+show_debug_message (string(global.golemDirection));
 global.golemDirection = direction; 
 
-//Spell Menu
-if (Input.s) room_goto(rm_spellMenu);
 
+//Spell Menu
+if (Input.s == true) room_goto(rm_spellMenu);
 
 //Movement:
-
-
-if (keyboard_check(vk_left)) {
-	left = true;
-	}
-if (keyboard_check(vk_right)) {
-	right = true;
-	}
-if (keyboard_check(vk_up)) {
-	up = true;
-	}
-if (keyboard_check(vk_down)) {
-	down = true;
-}
-
-
-	if (!keyboard_check(vk_left)) {
-		left = false;
-		}
-	if (!keyboard_check(vk_right)) {
-		right = false;
-		}
-	if (!keyboard_check(vk_up)) {
-		up = false;
-		}
-	if (!keyboard_check(vk_down)) {
-		down = false;
+//this temp variable is to reign in diagonal movement speed.
+var diag = false;
 		
-}
-	
-//Diagonal/directional stuff
-
-
-if (lastkey != 2) && (left) {
-		if (up) && (!down) direction = 180 
-		if (up) direction = 135;
-		if (down) direction = 225;
+if (lastkey != 2) && (Input.left == true) {
+		direction = 180; 
+		if (Input.up == true) {
+			direction = 135;
+			diag = true;
+			}
+		if (Input.down == true) {
+			direction = 225;
+			diag = true;
+			}
 		x -= spd;
 		//sprite_index = spr_golemWest;
 		} 
 
-if (lastkey != 1) && (right == true) {
-		if (up == false) && (down == false) direction = 0;
-		if (up = true) direction = 45;
-		if (down = true) direction = 315;
+if (lastkey != 1) && (Input.right == true) {
+		direction = 0;
+		if (Input.up = true) {
+			direction = 45;
+			diag = true;
+			}
+		if (Input.down = true) {
+			direction = 315;
+			diag = true;
+			}
 		x += spd;
 		//sprite_index = spr_golemEast;
 		}
 	
 
-if (lastkey !=4) && (up == true) {
-		if (left == false) && (right == false) direction = 90;
-		if (left == true) direction = 135;
-		if (right == true) direction = 45;
+if (lastkey !=4) && (Input.up == true) {
+		direction = 90;
+		if (Input.left == true) {
+			direction = 135;
+			diag = true;
+			}
+		if (Input.right == true) {
+			direction = 45;
+			diag = true;
+			}
 		y -= spd;
 		//sprite_index = spr_golemNorth;
 		}
 	
 
-if (lastkey !=3) && (down == true) {
-		if (left == false) && (right == false) direction = 270;
-		if (left == true) direction = 225;
-		if (right == true) direction = 315;
+if (lastkey !=3) && (Input.down == true) {
+		direction = 270;
+		if (Input.left == true) {
+			direction = 225;
+			diag = true;
+			}
+		if (Input.right == true) { 
+			direction = 315;
+			diag = true;
+			}
 		y += spd;
 		//sprite_index = spr_golemSouth;
 		}
- 
 
-//Move not right away
+//Move not right away, slow down diagonal movement slightly.
 
-spd++;
-if (spd >= 10) spd = 10;
+switch (diag) {
+	case true: {
+		spd++;
+		if (spd >= 7) spd = 7;
+	}
+	case false: {
+		spd++;
+		if (spd >= 10) spd = 10;
+	}
+}
+		
+	
 
 //Casting state
 if (keyboard_check(ord("Q"))) global.isCasting = "missile";
