@@ -4,7 +4,7 @@ if (playerHp <= 0) {
 	instance_destroy(obj_spellController);
 	}
 
-show_debug_message (string(global.golemDirection));
+
 global.golemDirection = direction; 
 
 

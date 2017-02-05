@@ -11,7 +11,8 @@
         "0f4e0465-154b-454f-9028-0fb1249cc561",
         "2fd81e1c-5b40-4fb3-9a63-457d6b5be74a",
         "594de708-3e7e-451f-84a4-6ebfb9ffa0bb",
-        "de93a6a8-def5-4481-b9ba-ca2b308815f6"
+        "de93a6a8-def5-4481-b9ba-ca2b308815f6",
+        "21a6ad67-9a28-4a22-9bfb-8bbbd6965b1f"
     ],
     "filterType": "GMSprite",
     "folderName": "Spells Menu",

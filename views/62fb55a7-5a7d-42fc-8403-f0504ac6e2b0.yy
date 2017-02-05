@@ -6,7 +6,8 @@
     "children": [
         "0a26a8c4-039b-4cec-b534-9d9aa00028b7",
         "4fc91a7d-9ad1-45c3-82f4-b21011e08661",
-        "48f4758e-f7c8-475e-ac91-5bf0518c43ec"
+        "48f4758e-f7c8-475e-ac91-5bf0518c43ec",
+        "38345755-cd87-4527-8c46-95093323fd0b"
     ],
     "filterType": "GMObject",
     "folderName": "Missile Menu",
