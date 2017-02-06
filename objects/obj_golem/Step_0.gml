@@ -7,7 +7,7 @@ if (playerHp <= 0) {
 
 
 global.golemDirection = direction; 
-//poo
+
 
 //Spell Menu
 
