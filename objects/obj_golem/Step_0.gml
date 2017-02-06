@@ -123,6 +123,7 @@ switch (global.isCasting) {
 	}
 	
 	case "area": {
+		smoke();
 		break;
 	}
 	

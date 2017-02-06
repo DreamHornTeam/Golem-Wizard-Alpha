@@ -7,6 +7,8 @@ instance_create_layer(0,0,"instances",Input);
 global.room = "space";
 
 //shooting states
+
+
 global.missile = "idle";
 global.area= "idle";
 global.warp = "idle";
@@ -19,3 +21,4 @@ global.hasBurst = false;
 global.hasSmoke = false;
 //first warp spell. Very long cooldown. 
 global.hasDodge = false;
+
