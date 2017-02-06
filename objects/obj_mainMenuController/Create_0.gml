@@ -1,5 +1,5 @@
 global.mainMenu = 1;
-global.mainMenuCount = instance_count - 6;
+global.mainMenuCount = instance_count - 5;
 
 //music
 if (bgm_golemTown) audio_stop_sound(bgm_golemTown);
