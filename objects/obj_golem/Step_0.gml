@@ -1,4 +1,5 @@
 //Death
+
 if (playerHp <= 0) {
 	instance_destroy();
 	instance_destroy(obj_spellController);
@@ -6,9 +7,10 @@ if (playerHp <= 0) {
 
 
 global.golemDirection = direction; 
-
+//poo
 
 //Spell Menu
+
 if (Input.s == true) room_goto(rm_spellMenu);
 
 //Movement:
